@@ -1,0 +1,212 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-family: "Raleway", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+//=================================================//
+
+.container {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 3em;
+  gap: 1em;
+}
+
+.title {
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    display: block;
+    width: 4em;
+    height: 0.2em;
+    background-color: #ffcc29;
+    margin: 0.1em auto;
+    margin-bottom: 0.8em;
+  }
+}
+
+.section-hr {
+  display: block;
+  width: 100%;
+  height: 0.2em;
+  background-color: #000000;
+  margin: 2em auto;
+}
+
+nav {
+  display: none;
+}
+
+header {
+  .hero-section {
+    .hero-image {
+      background-image: url("images/background/intro-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .hero-presentation {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      color: black;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 5rem;
+        font-family: dancing script;
+        font-weight: bold;
+      }
+      p {
+        margin-top: -1.2em;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+    }
+    .call-to-action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        border: none;
+        background-color: #ffcc29;
+        padding: 0.5em 1.3em;
+      }
+      a {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    margin-top: 1em;
+    width: 14em;
+  }
+}
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 1em;
+    }
+
+    .img-container {
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.portfolio-separator {
+  text-align: center;
+
+  h2 {
+    font-size: xx-large;
+    padding: 2em 0;
+  }
+  .portfolio-image {
+    background-image: url("images/background/blog-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+
+.portfolio-section {
+  .images {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;
+        border: 2px solid white;
+        box-sizing: border-box;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 100%;
+        background-color: #ffcc29;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
