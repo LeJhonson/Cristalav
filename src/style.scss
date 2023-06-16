@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script:400,700);
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700");
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -29,8 +29,6 @@ body {
   min-height: 100vh;
 }
 
-//=================================================//
-
 .container {
   display: flex;
   text-align: center;
@@ -41,6 +39,7 @@ body {
 
 .title {
   text-transform: uppercase;
+
   &::after {
     content: "";
     display: block;
@@ -72,6 +71,7 @@ header {
       background-position: center;
       background-repeat: no-repeat;
     }
+
     .hero-presentation {
       padding: 1em;
       display: flex;
@@ -82,15 +82,17 @@ header {
 
       h1 {
         font-size: 5rem;
-        font-family: dancing script;
+        font-family: "Dancing Script", cursive;
         font-weight: bold;
       }
+
       p {
         margin-top: -1.2em;
         font-size: 1.1rem;
         font-weight: bold;
       }
     }
+
     .call-to-action {
       display: flex;
       justify-content: center;
@@ -101,6 +103,7 @@ header {
         background-color: #ffcc29;
         padding: 0.5em 1.3em;
       }
+
       a {
         font-weight: 600;
         font-size: 1.2rem;
@@ -162,6 +165,7 @@ header {
     font-size: xx-large;
     padding: 2em 0;
   }
+
   .portfolio-image {
     background-image: url("images/background/blog-bg.jpg");
     background-size: cover;
@@ -203,6 +207,7 @@ header {
       }
 
       img {
+        width: 100%;
         display: block;
         max-width: 100%;
         height: auto;
@@ -226,6 +231,7 @@ header {
     font-weight: 500;
     font-size: 2.6em;
   }
+
   .contact-image {
     background-image: url("images/background/team-bg.jpg");
     background-size: auto 100%;
@@ -277,6 +283,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: #ffcc29;
+
     p {
       color: #000000;
       font-weight: 600;
@@ -288,4 +295,15 @@ footer {
       height: 100%;
     }
   }
+}
+
+// Media queries
+//==================================================//
+@media (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) {
 }
