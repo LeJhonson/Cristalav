@@ -66,7 +66,7 @@ nav {
 header {
   .hero-section {
     .hero-image {
-      background-image: url("images/background/intro-bg.jpg");
+      background-image: url("/images/bg/intro-bg.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -167,7 +167,7 @@ header {
   }
 
   .portfolio-image {
-    background-image: url("images/background/blog-bg.jpg");
+    background-image: url("/images/bg/blog-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -233,7 +233,7 @@ header {
   }
 
   .contact-image {
-    background-image: url("images/background/team-bg.jpg");
+    background-image: url("/images/bg/team-bg.jpg");
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
