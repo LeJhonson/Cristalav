@@ -159,6 +159,7 @@ header {
       overflow: hidden;
 
       img {
+        border-radius: 25px;
         display: block;
         width: 100%;
         height: auto;
@@ -266,7 +267,7 @@ footer {
       flex-direction: column;
     }
 
-    padding: 3em 5em;
+    padding: 3em 1em;
 
     h3 {
       color: #ffcc29;
@@ -284,7 +285,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1em;
+      gap: 0.6em;
       color: #ffffff;
       text-decoration: none;
     }
@@ -340,8 +341,14 @@ footer {
   }
   .services-section {
     div {
+      
       .img-container {
         height: 390px;
+        border-radius: 25px;
+
+        img {
+          border-radius: 25px;
+        }
       }
     }
   }
@@ -350,7 +357,18 @@ footer {
       background-size: cover;
     }
   }
+
+  footer {
+    .footer-section {    
+          
+      a {
+        gap: 0.6em;
+      }      
+      
+    }
+  }
 }
+
 
 @media (min-width: 1024px) {
   h2
