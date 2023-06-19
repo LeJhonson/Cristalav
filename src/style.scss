@@ -21,6 +21,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
 
 .title {
   text-transform: uppercase;
+  font-size: 1.8rem;
 
   &::after {
     content: "";
@@ -81,13 +83,13 @@ header {
       align-items: center;
 
       h1 {
-        font-size: 5rem;
+        font-size: 7rem;
         font-family: "Dancing Script", cursive;
         font-weight: bold;
       }
 
       p {
-        margin-top: -1.2em;
+        margin-top: -2em;
         font-size: 1.1rem;
         font-weight: bold;
       }
@@ -101,13 +103,14 @@ header {
       button {
         border: none;
         background-color: #ffcc29;
-        padding: 0.5em 1.3em;
+        padding: 0.7em 1.3em;
       }
 
       a {
         font-weight: 600;
         font-size: 1.2rem;
         color: black;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
       }
@@ -123,7 +126,12 @@ header {
 
   .logo {
     margin-top: 1em;
-    width: 14em;
+    margin-bottom: 3em;
+    width: 18em;
+  }
+
+  p {
+    font-size: 1.5rem;
   }
 }
 
@@ -138,6 +146,7 @@ header {
 
     p {
       margin: 1em;
+      font-size: 1.5rem;
     }
 
     .img-container {
@@ -146,7 +155,7 @@ header {
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 150px;
+      height: 220px;
       overflow: hidden;
 
       img {
@@ -245,17 +254,30 @@ footer {
   background-color: #000000;
   color: #ffffff;
 
+  .footer-card {
+    gap: 1.2em;
+    margin-top: 2em;
+
+  }
+
   .footer-section {
     div {
       display: flex;
       flex-direction: column;
     }
 
-    padding: 3em 0;
+    padding: 3em 5em;
 
     h3 {
       color: #ffcc29;
+      font-size: 1.5em;
+      text-transform: uppercase;
     }
+    
+    p {
+      font-size: 1.4em;
+    }
+
 
     a {
       margin-top: 0.5em;
@@ -310,6 +332,12 @@ footer {
 // Media queries
 //==================================================//
 @media (min-width: 768px) {
+  
+  .about-section {
+    .logo {
+      width: 30em;
+    }
+  }
   .services-section {
     div {
       .img-container {
@@ -325,6 +353,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  h2
   .title {
     &::after {
       margin: 0.1em 0;
@@ -337,11 +366,24 @@ footer {
         padding-left: 8em;
         color: white;
         align-items: start;
+
+        h1 {
+          font-size: 13rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+          margin-left: 4em;
+          margin-top: -2.5em;
+        }
       }
     }
   }
 
   .about-section {
+    .logo {
+      width: 20em;
+    }
     div {
       display: flex;
       flex-direction: row;
@@ -437,15 +479,24 @@ footer {
   header {
     .hero-section {
       .hero-presentation {
+
         h1 {
-          font-size: 8em;
+          font-size: 15em;
+          margin-bottom: -1.5rem;
         }
         p {
-          font-size: 1.5em;
+          font-size: 2em;
+          padding-left: 1em;
+          padding-top: 0.5em;
         }
-        padding: 5em 9em;
+        padding: 2em 9em;
         color: white;
         align-items: start;
+      }
+
+      .call-to-action {
+        a {
+        }
       }
     }
   }
@@ -456,12 +507,12 @@ footer {
 
       .logo {
         margin-top: 0;
-        width: 18em;
+        width: 25em;
       }
 
       .content {
         p {
-          font-size: larger;
+          font-size: 2em;
         }
       }
     }
@@ -472,17 +523,18 @@ footer {
 
     .right-card {
       p {
-        font-size: larger;
+        font-size: 2em;
         padding: 3em;
       }
       .img-container {
+        
         height: 270px;
       }
     }
 
     .left-card {
       p {
-        font-size: larger;
+        font-size: 2em;
         padding: 3em 4em;
       }
       .img-container {
@@ -502,6 +554,11 @@ footer {
 }
 
 @media only screen and (min-width: 1620px) {
+  
+  * {
+    margin: 0em;
+  }
+  
   .container {
     max-width: 1620px;
     margin: 0 auto;
@@ -536,7 +593,9 @@ footer {
   }
 
   .services-section {
+    margin: 0em 10em;
     .right-card {
+      margin-right: 7rem;
       p {
         font-size: xx-large;
       }
@@ -553,7 +612,8 @@ footer {
         font-size: xx-large;
       }
       .img-container {
-        height: 340px;
+        margin-left: 7rem;
+        height: 300px;
       }
     }
   }
