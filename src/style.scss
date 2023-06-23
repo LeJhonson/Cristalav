@@ -340,6 +340,11 @@ footer {
     }
   }
   .services-section {
+
+    p {
+        text-align: justify;
+    }
+
     div {
       
       .img-container {
@@ -571,11 +576,36 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1620px) {
-  
-  * {
-    margin: 0em;
+@media only screen and (min-width: 1366px) {
+
+  .about-section {
+    div {
+      .logo {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5em;
+        margin-top: 3em;
+      }
+    }
   }
+  
+  .services-section {
+    .right-card {
+      margin-bottom: -4em;
+    }
+
+    .left-card {
+      margin-left: 4em;
+      margin-bottom: -11em;
+      margin-top: -8em;
+
+
+    }
+  }
+  
+}
+
+@media only screen and (min-width: 1620px) {
   
   .container {
     max-width: 1620px;
